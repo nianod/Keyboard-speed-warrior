@@ -77,11 +77,7 @@ const scores = () => {
         giveResult.style.display = "block"
         }
     })
-    // if(writersResult === realText.tolowerCase()) {
-    //    let remarks = document.createElement("b")
-    //    remarks.innerHTML = "Excellent!!";
-    //    document.body.appendChild(remarks)        
-    // }
+  
 
 const randomtext = Math.floor(Math.random() * actualTexts.length)
 realText.innerHTML = actualTexts[randomtext]
