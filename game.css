@@ -14,7 +14,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin: 20px auto;
-    background: fuchsia;
+    background: rgb(227, 95, 227);
     width: 60%;
     height: fit-content;
     border-radius: 5px;
@@ -27,6 +27,8 @@ body {
 }
 textarea {
     padding: 5px;
+    width: 200px;
+    margin: 10px;
 }
 textarea:focus {
     outline: transparent;
@@ -49,4 +51,8 @@ h2 {
     font-size: 1.5rem;
     font-weight: 600;
     color: white;
+}
+#texts {
+    color: rgb(244, 249, 249);
+    font-weight: 700;
 }

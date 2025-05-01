@@ -18,3 +18,11 @@ const actualTexts = [
     "Those who stay humble they become the become the legends",
     "Naming things is the final boss of programming"
 ]
+
+start.addEventListener("click", () => {
+    typingArea.reset()
+})
+
+
+const randomtext = Math.floor(Math.random() * actualTexts.length)
+realText.innerHTML = actualTexts[randomtext]
