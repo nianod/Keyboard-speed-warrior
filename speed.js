@@ -3,7 +3,8 @@ const realText = document.getElementById("texts")
 const typingArea = document.getElementById("text")
 const start = document.getElementById("start")
 const stop = document.getElementById("finish")
-let count;
+let count = 20;
+let countDown
 
 const actualTexts = [
     "IronMan is the best Avenger",
@@ -27,7 +28,21 @@ typingArea.addEventListener("paste", (event) => {
 typingArea.disabled = true
 
 start.addEventListener("click", () => {
+    let count = 20
     typingArea.disabled = false
+    //start.disabled = true;
+
+    countDown = setInterval(() => {
+        count--;
+        timeLimit.innerHTML = count;
+
+        if(count <= 0) {
+            clearInterval(countDown)
+            typingArea.disabled = true;
+            alert("Hey time is up")
+        }
+
+    }, 1000)
 })
 
 
