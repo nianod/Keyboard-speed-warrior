@@ -1,0 +1,20 @@
+const timeLimit = document.getElementById("timer")
+const realText = document.getElementById("texts")
+const typingArea = document.getElementById("text")
+const start = document.getElementById("start")
+const stop = document.getElementById("finish")
+let count;
+
+const actualTexts = [
+    "IronMan is the best Avenger",
+    "Learn to say no when necessary",
+    "Writing on coloured text isn't just code, its a flex",
+    "Don't worry about making mistakes, you'll recover",
+    "If you discover someone has whats your're praying for, become a blessing to them",
+    "Longest league title drought among the traditional top six",
+    "Decline in global stature and competitiveness compared to other European giants",
+    "Everytime you level up, your old life will try to call you back. Don't answer",
+    "This highlights a crucial point. Decision-making is the true differentiator at every level of the game",
+    "Those who stay humble they become the become the legends",
+    "Naming things is the final boss of programming"
+]
