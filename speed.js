@@ -18,7 +18,10 @@ const actualTexts = [
     "Those who stay humble they become the become the legends",
     "Naming things is the final boss of programming"
 ]
-
+typingArea.addEventListener("paste", (event) => {
+    event.preventDefault();
+    alert("I see you, No cheating. Pasting is disabled")
+})
 start.addEventListener("click", () => {
     typingArea.reset()
 })

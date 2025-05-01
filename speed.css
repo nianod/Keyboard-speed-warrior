@@ -27,8 +27,9 @@ body {
 }
 textarea {
     padding: 5px;
-    width: 200px;
-    margin: 10px;
+    width: 300px;
+    margin-top: 5px;
+    height: 5rem;
 }
 textarea:focus {
     outline: transparent;
@@ -55,4 +56,6 @@ h2 {
 #texts {
     color: rgb(244, 249, 249);
     font-weight: 700;
+    margin-top: 10px;
+    align-items: center;
 }
