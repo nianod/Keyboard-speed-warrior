@@ -26,10 +26,12 @@ typingArea.addEventListener("paste", (event) => {
 
 
 typingArea.disabled = true
+let complete = false
 
 start.addEventListener("click", () => {
     let count = 20
     typingArea.disabled = false
+    complete = true
     //start.disabled = true;
 
     countDown = setInterval(() => {
@@ -65,16 +67,21 @@ const scores = () => {
     giveResult.style.display = "none";
     score.appendChild(giveResult)
     
-    // results.push(writersResult)
-
-    // score.innerHTML = results.join()
-
-
-
-
-
-
-
+    
+    stop.addEventListener("click", () => {
+        if(!complete) {
+            alert("you must start before you finish")
+            return;
+        } else {
+        typingArea.disabled = true;
+        giveResult.style.display = "block"
+        }
+    })
+    // if(writersResult === realText.tolowerCase()) {
+    //    let remarks = document.createElement("b")
+    //    remarks.innerHTML = "Excellent!!";
+    //    document.body.appendChild(remarks)        
+    // }
 
 const randomtext = Math.floor(Math.random() * actualTexts.length)
 realText.innerHTML = actualTexts[randomtext]
