@@ -26,8 +26,6 @@ typingArea.addEventListener("paste", (event) => {
 
 typingArea.disabled = true
 
-
-
 start.addEventListener("click", () => {
     typingArea.disabled = false
 })
