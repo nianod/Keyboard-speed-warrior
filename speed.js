@@ -41,10 +41,11 @@ start.addEventListener("click", () => {
             typingArea.disabled = true;
             alert("Hey time is up")
         }
-
     }, 1000)
 })
 
-
+let results = [];
+let writersResult = typingArea.value;
+ 
 const randomtext = Math.floor(Math.random() * actualTexts.length)
 realText.innerHTML = actualTexts[randomtext]
