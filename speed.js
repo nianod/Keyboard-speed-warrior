@@ -40,21 +40,35 @@ start.addEventListener("click", () => {
             clearInterval(countDown)
             typingArea.disabled = true;
             alert("Hey time is up")
+            giveResult.style.display = "block";
         }
     }, 1000)
 })
 
+let score = document.getElementById("score");
 
 let results = [];
 const scores = () => {
-    let score = document.getElementById("score")
     let writersResult = typingArea.value.trim();
-    results.push(writersResult)
+    
+    if (writersResult) {
+        results.push(writersResult);
+        score.innerHTML = results.map((r, i) => `<p>${i + 1}. ${r}</p>`).join("");
+      }
+    };
+    
+    let giveResult = document.createElement("button")
+    giveResult.addEventListener("click", scores)
+    giveResult.innerHTML = "see results"
+    giveResult.style.marginBottom = "10px"
+    giveResult.style.background = "green"
+    giveResult.style.display = "none";
+    score.appendChild(giveResult)
+    
+    // results.push(writersResult)
 
-    score.innerHTML = results.join("<br>")
- 
-}
-scores();
+    // score.innerHTML = results.join()
+
 
 
 

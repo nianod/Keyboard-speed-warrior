@@ -59,3 +59,9 @@ h2 {
     margin-top: 10px;
     text-align: center;
 }
+.countdown {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
