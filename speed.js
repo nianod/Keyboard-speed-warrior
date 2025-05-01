@@ -36,7 +36,7 @@ start.addEventListener("click", () => {
         count--;
         timeLimit.innerHTML = count;
 
-        if(count <= 0) {
+        if(count == 0) {
             clearInterval(countDown)
             typingArea.disabled = true;
             alert("Hey time is up")
@@ -44,8 +44,23 @@ start.addEventListener("click", () => {
     }, 1000)
 })
 
+
 let results = [];
-let writersResult = typingArea.value;
+const scores = () => {
+    let score = document.getElementById("score")
+    let writersResult = typingArea.value.trim();
+    results.push(writersResult)
+
+    score.innerHTML = results.join("<br>")
  
+}
+scores();
+
+
+
+
+
+
+
 const randomtext = Math.floor(Math.random() * actualTexts.length)
 realText.innerHTML = actualTexts[randomtext]
