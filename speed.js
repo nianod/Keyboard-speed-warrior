@@ -20,10 +20,16 @@ const actualTexts = [
 ]
 typingArea.addEventListener("paste", (event) => {
     event.preventDefault();
-    alert("I see you, No cheating. Pasting is disabled")
+    alert("I see you👀, No cheating. Pasting is disabled😏")
 })
+
+
+typingArea.disabled = true
+
+
+
 start.addEventListener("click", () => {
-    typingArea.reset()
+    typingArea.disabled = false
 })
 
 
