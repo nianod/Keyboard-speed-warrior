@@ -88,8 +88,11 @@ const scores = () => {
             let seegrade = document.createElement("p")
             seegrade.textContent = "excellent";
             score.appendChild(seegrade);
+            seegrade.style.color = "red"
+
         } else {
-            seegrade.tex
+            seegrade.textContent = "Please try again";
+            // seegrade.style.color = "red"
         }
 
     }
