@@ -65,3 +65,6 @@ h2 {
     align-items: center;
     flex-direction: column;
 }
+#score {
+    margin-bottom: 10px;
+}

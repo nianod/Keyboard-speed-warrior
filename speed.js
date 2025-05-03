@@ -47,6 +47,7 @@ start.addEventListener("click", () => {
     }, 1000)
 })
 
+
 let score = document.getElementById("score");
 
 let results = [];
@@ -75,6 +76,7 @@ const scores = () => {
         } else {
         typingArea.disabled = true;
         giveResult.style.display = "block"
+        countDown.pause = true;
         }
     })
   
