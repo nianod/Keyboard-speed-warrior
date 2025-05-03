@@ -76,7 +76,7 @@ const scores = () => {
         } else {
         typingArea.disabled = true;
         giveResult.style.display = "block"
-        countDown.pause = true;
+        clearInterval(countDown)
         }
     })
   
