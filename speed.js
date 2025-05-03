@@ -11,7 +11,7 @@ const actualTexts = [
     "Learn to say no when necessary",
     "Writing on coloured text isn't just code, its a flex",
     "Don't worry about making mistakes, you'll recover",
-    "If you discover someone has whats your're praying for, become a blessing to them",
+    "If you discover someone has what you're praying for, become a blessing to them",
     "Longest league title drought among the traditional top six",
     "Decline in global stature and competitiveness compared to other European giants",
     "Everytime you level up, your old life will try to call you back. Don't answer",
@@ -68,8 +68,9 @@ const scores = () => {
     giveResult.style.display = "none";
     score.appendChild(giveResult)
     
-    
-    stop.addEventListener("click", () => {
+
+
+        stop.addEventListener("click", () => {
         if(!complete) {
             alert("you must start before you finish")
             return;
@@ -79,6 +80,19 @@ const scores = () => {
         clearInterval(countDown)
         }
     })
+
+
+    const grade = () => {
+        let remarks = writersResult
+        if(remarks === realText.tolowercase()) {
+            let seegrade = document.createElement("p")
+            seegrade.textContent = "excellent";
+            score.appendChild(seegrade);
+        } else {
+            seegrade.tex
+        }
+
+    }
   
 
 const randomtext = Math.floor(Math.random() * actualTexts.length)
