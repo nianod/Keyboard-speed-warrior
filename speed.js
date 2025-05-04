@@ -17,7 +17,8 @@ const actualTexts = [
     "Everytime you level up, your old life will try to call you back. Don't answer",
     "This highlights a crucial point. Decision-making is the true differentiator at every level of the game",
     "Those who stay humble they become the become the legends",
-    "Naming things is the final boss of programming"
+    "Naming things is the final boss of programming",
+    "Do not mess with system32 unless you're looking for trouble"
 ]
 typingArea.addEventListener("paste", (event) => {
     event.preventDefault();
