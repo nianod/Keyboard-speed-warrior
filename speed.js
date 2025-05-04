@@ -34,6 +34,8 @@ start.addEventListener("click", () => {
     typingArea.disabled = false
     complete = true
     //start.disabled = true;
+    //giveResult.style.display = "none";
+
 
     countDown = setInterval(() => {
         count--;
@@ -42,6 +44,7 @@ start.addEventListener("click", () => {
         if(count == 0) {
             clearInterval(countDown)
             typingArea.disabled = true;
+
             alert("Hey time is up")
             giveResult.style.display = "block";
         }
@@ -78,7 +81,7 @@ const scores = () => {
         } else {
         typingArea.disabled = true;
         giveResult.style.display = "block"
-        clearInterval(countDown)
+        clearInterval(countDown);
         }
     })
 
