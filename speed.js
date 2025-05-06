@@ -1,3 +1,11 @@
+
+const body = document.getElementById("body")
+
+    body.addEventListener("contextmenu", (event) => {
+        event.preventDefault()
+        alert("Right click is disabled");
+    })
+
 const timeLimit = document.getElementById("timer")
 const realText = document.getElementById("texts")
 const typingArea = document.getElementById("text")
