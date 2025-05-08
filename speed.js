@@ -35,30 +35,34 @@ typingArea.addEventListener("paste", (event) => {
 
 
 typingArea.disabled = true
-let complete = false
+let complete = false;
 
 start.addEventListener("click", () => {
     let count = 20
     typingArea.disabled = false
     complete = true
-    //start.disabled = true;
-    //giveResult.style.display = "none";
+ 
 
 
     countDown = setInterval(() => {
         count--;
         timeLimit.innerHTML = count;
 
+
+
         if(count == 0) {
             clearInterval(countDown)
             typingArea.disabled = true;
-
+            
             alert("Hey time is up")
             giveResult.style.display = "block";
         }
     }, 1000)
 })
 
+// if(start) {
+//     alert("Already started");
+// }
 
 let score = document.getElementById("score");
 
