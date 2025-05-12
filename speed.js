@@ -56,6 +56,11 @@ start.addEventListener("click", () => {
             
             alert("Hey time is up")
             giveResult.style.display = "block";
+        } else {
+            if(count === 10) {
+                let warning = document.createElement("p")
+                warning.innerHTML = "Time is running out"
+            }
         }
     }, 1000)
 })
