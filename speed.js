@@ -10,6 +10,7 @@ const timeLimit = document.getElementById("timer")
 const realText = document.getElementById("texts")
 const typingArea = document.getElementById("text")
 const start = document.getElementById("start")
+const contih = document.querySelector(".container")
 const stop = document.getElementById("finish")
 let count = 20;
 let countDown
@@ -58,8 +59,10 @@ start.addEventListener("click", () => {
             giveResult.style.display = "block";
         } else {
             if(count === 10) {
-                let warning = document.createElement("p")
+                let warning = document.createElement("b")
                 warning.innerHTML = "Time is running out"
+                contih.appendChild(warning)
+                warning.style.color = "red"
             }
         }
     }, 1000)
